@@ -1,0 +1,82 @@
+/* whycards.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.container {
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.boxcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+.boxtext{
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.boxes {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+/* Responsive Layout */
+@media (min-width: 601px) {
+  .boxcontainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .boxes {
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .boxes:nth-child(4n) {
+    border-right: none;
+  }
+
+  .boxes:nth-last-child(-n+4) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boxes {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+  }
+  .boxtext{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+}

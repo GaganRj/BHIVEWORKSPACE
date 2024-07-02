@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.container {
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+.arrowicon {
+  display: none;
+}
+.s {
+  display: none;
+}
+
+.heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+.offimaincon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cards {
+  width: 100%;
+  max-width: 370px;
+  height: auto;
+  border-radius: 8px;
+  border: 1.08px solid #eee7e7cc;
+  background: #ffffff;
+  box-shadow: 0px 1.08px 8.63px 0px #0000000f;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.headboxcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardheading {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.smbox {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  border: 0.47px solid #eee7e7;
+  background: #eee7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.km {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: center;
+  color: #26323880;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.workspace {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px;
+  border-radius: 5px;
+  background: linear-gradient(100.27deg, #263238 22.66%, #2f4b59 67.67%);
+  border: 0.5px solid #ffbb0080;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffbb00;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 202px;
+  border-radius: 6px;
+}
+
+.butcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button1 {
+  width: 167px;
+  height: 56px;
+  border-radius: 6px;
+  border: 0.5px solid #cec6c6;
+  background: #f9f9f9;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button2con {
+  position: relative;
+  height: 100px; /* Increase height if necessary */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button2 {
+  width: 167px;
+  height: 56px;
+  border-radius: 6px;
+  border: 0.5px solid #ffcf4b;
+  background: #ffbb00;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.dicount {
+  width: 69px;
+  height: 18px;
+  border-radius: 6px;
+  background: #263238;
+  color: white;
+  font-size: 8px;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pass {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.amount {
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 4px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.day {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .s {
+    display: contents;
+  }
+  .overview {
+    display: none;
+  }
+  .arr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .arrowicon{
+    display: contents;
+  }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.container {
+  background-image: url("../../../public/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+
+.vector {
+  background-image: url("../../../public/images/vector.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  position: absolute;
+  width: 644px;
+  height: 500px; /* Adjust the height as needed */
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.text {
+  font-size: 58px;
+  font-weight: 700;
+  width: 50%;
+  padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.videoContainer {
+  width: 488px;
+  height: 488px;
+  overflow-y: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust this if you need different behavior */
+}
+
+@media only screen and (min-width: 249px) and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .text {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+}
